@@ -1,0 +1,30 @@
+{
+  "name": "tree-sitter-wolfram",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bindings/node",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "brenton",
+  "license": "MIT",
+  "dependencies": {
+    "nan": "^2.15.0"
+  },
+  "devDependencies": {
+    "tree-sitter-cli": "^0.20.0"
+  },
+  "repository": "https://github.com/bostick/tree-sitter-wolfram",
+  "tree-sitter": [
+    {
+      "scope": "source.wolfram",
+      "file-types": [
+        "wl",
+        "m",
+        "wls",
+        "wlt",
+        "mt"
+      ]
+    }
+  ]
+}

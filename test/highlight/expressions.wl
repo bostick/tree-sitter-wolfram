@@ -1,0 +1,3 @@
+   a + b
+(* ^symbol *)
+(*     ^symbol *)
