@@ -8,10 +8,6 @@
         "name": "_expression"
       }
     },
-    "comment": {
-      "type": "PATTERN",
-      "value": "\\(\\*.*\\*\\)"
-    },
     "_expression": {
       "type": "CHOICE",
       "members": [
@@ -1438,7 +1434,12 @@
   ],
   "conflicts": [],
   "precedences": [],
-  "externals": [],
+  "externals": [
+    {
+      "type": "SYMBOL",
+      "name": "comment"
+    }
+  ],
   "inline": [],
   "supertypes": []
 }

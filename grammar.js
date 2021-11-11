@@ -183,10 +183,12 @@ module.exports = grammar({
     /\s/,
   ],
 
+  externals: $ => [
+    $.comment,
+  ],
+
   rules: {
     source_file: $ => repeat($._expression),
-
-    comment: $ => /\(\*.*\*\)/,
 
     _expression: $ => choice(
       $._leaf,
